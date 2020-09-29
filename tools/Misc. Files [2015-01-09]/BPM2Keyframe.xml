@@ -1,0 +1,31 @@
+﻿<dialog id="insertStairlyDialog" title="BPM2Keyframe" buttons="accept, cancel" >
+	<grid>
+		<columns>
+			<column />
+			<column />
+		</columns>
+		<rows>
+			<row>
+				<label value="時間(sec)" align="right" />
+				<textbox id="st_sec" value="10" tabindex="1"/>
+			</row>
+			<row>
+				<label value="BPM" align="right" />
+				<textbox id="st_bpm" value="120" tabindex="2"/>
+			</row>
+			<row>
+				<label value="マーク間隔" align="right" />
+				<textbox id="st_mark" value="4" tabindex="3"/>
+			</row>
+			<row>
+				<label value="音ずれ補正 " align="right" />
+				<menulist id="st_correction" tabindex="4">
+					<menupop>
+						<menuitem label="オン: Flash作業中に最適化" value="1" />
+						<menuitem label="オフ: 出力ファイルに最適化" value="0" />
+					</menupop>
+				</menulist>
+			</row>
+		</rows>
+	</grid>
+</dialog>
